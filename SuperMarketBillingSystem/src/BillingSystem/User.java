@@ -1,0 +1,59 @@
+package BillingSystem;
+public class User 
+{
+	private String name;
+	private String email;
+	private String pswd;
+	private String role;
+	private int credit;
+	private int score;
+	
+	User()
+	{
+		this.credit=1000;
+		this.score=0;
+	}
+	
+	User(String name,String email,String pswd,String role)
+	{
+		this.name=name;
+		this.email=email;
+		this.pswd=pswd;
+		this.role=role;
+	}
+	
+	public String getName()
+	{
+		return this.name;
+	}
+	
+	public String getEmail()
+	{
+		return this.email;
+	}
+	
+	public String getPswd()
+	{
+		return this.pswd;
+	}
+	
+	public String getRole()
+	{
+		return this.role;
+	}
+	
+	public int getCredit()
+	{
+		return this.credit;
+	}
+	public int getScore()
+	{
+		return this.score;
+	}
+	
+	public void setCredit(int val)
+	{
+		this.credit=val;
+	}
+	
+}
